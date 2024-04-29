@@ -3,6 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodbuddy/constants/constants.dart';
 import 'package:get/get.dart';
 
+
+
+Widget defaultHome = const MyHomePage(title: 'FoodBuddy');
+
 void main() {
   runApp(const MyApp());
 }
@@ -28,10 +32,10 @@ class MyApp extends StatelessWidget {
            iconTheme:const IconThemeData(color: kDark),
            primarySwatch: Colors.grey,
             ),
-          home: child,
+          home: defaultHome,
         );
       },
-      child: const MyHomePage(title: 'First Method'),
+      //child: const MyHomePage(title: 'FoodBuddy'),
     );
   }
 }
