@@ -1,12 +1,25 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:foodbuddy/constants/constants.dart';
 import 'package:foodbuddy/constants/controllers/tab_index_controller.dart';
+import 'package:foodbuddy/views/cart/cart_page.dart';
+import 'package:foodbuddy/views/home/home_page.dart';
+import 'package:foodbuddy/views/profile/profile_page.dart';
+import 'package:foodbuddy/views/search/search_page.dart';
 import 'package:get/get.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+// ignore: duplicate_import
+//import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+  MainScreen({super.key});
+  List<Widget> pageList = const [
+    HomePage(),
+    SearchPage(),
+    CartPage(),
+    ProfilePage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +27,7 @@ class MainScreen extends StatelessWidget {
     return Obx(() => Scaffold(
           body: Stack(
             children: [
-              Container(
-                height: height,
-                width: width,
-                color: kOffWhite,
-              ),
+              pageList[controller.tabIndex],
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Theme(
