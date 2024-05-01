@@ -17,42 +17,60 @@ class CustomAppBar extends StatelessWidget {
       child: Container(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            CircleAvatar(
-              maxRadius: 25.r,
-              backgroundColor: kSecondary,
-              backgroundImage: const NetworkImage(
-                  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 6.h, left: 8.w),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ReusableText(
-                      text: "Deliver to",
-                      style: appStyle(13, kSecondary, FontWeight.w600)),
-                  SizedBox(
-                    width: width * 0.65,
-                    child: Text(
-                        "301 C-198, Newtown, Kolkata, West Bengal, 700156",
-                        overflow: TextOverflow.ellipsis,
-                        style: appStyle(11, kGrayLight, FontWeight.normal)),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                CircleAvatar(
+                  maxRadius: 22.r,
+                  backgroundColor: kSecondary,
+                  backgroundImage: const NetworkImage(profileImage),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 6.h, left: 8.w),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ReusableText(
+                          text: "Deliver to",
+                          style: appStyle(13, kSecondary, FontWeight.w600)),
+                      SizedBox(
+                        width: width * 0.65,
+                        child: Text(
+                            "301 C-198, Newtown, Kolkata, West Bengal, 700156",
+                            overflow: TextOverflow.ellipsis,
+                            style: appStyle(11, kGrayLight, FontWeight.normal)),
+                      ),
+                    ],
                   ),
-                  const Text(
-                    "🌤️",
-                    style: TextStyle(
-                      color: kGrayLight,
-                      fontSize: 35,
-                    ),
-                  )
-                ],
-              ),
+                )
+              ],
+            ),
+            Text(
+             getTimeOfDay(),
+             style:  const TextStyle(fontSize: 35),
             )
           ],
         ),
       ),
     );
+ 
   }
+    String getTimeOfDay() {
+    DateTime now = DateTime.now();
+    int hour = now.hour;
+
+    if (hour >= 0 && hour < 12) {
+      return ' ☀️ ';
+    } else if (hour >= 12 && hour < 16) {
+      return ' ⛅ ';
+    } else {
+      return ' 🌙 ';
+    }
+  }
+
+
+
 }
