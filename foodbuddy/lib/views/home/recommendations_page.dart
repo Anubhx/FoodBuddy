@@ -11,6 +11,7 @@ class Recommendation extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.3,
+        
         backgroundColor: kOffWhite,
         title: ReusableText(text: "Recommendation", 
         style: appStyle(13, kGray, FontWeight.w600 )),

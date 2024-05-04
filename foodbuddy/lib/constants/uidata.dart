@@ -310,7 +310,7 @@ List <Map<String, dynamic>> foods = [
     "ratingCount": "320",
     "description":
         "A succulent assortment of grilled meats, served with sides and sauces.",
-    "price": 18.99,
+    "price": 8.99,
     "additives": [
       {"id": 1, "title": "Chicken", "price": "3.00"},
       {"id": 2, "title": "Beef", "price": "4.00"},
