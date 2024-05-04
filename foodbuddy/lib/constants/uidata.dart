@@ -67,7 +67,7 @@ List<dynamic> categories = [
   }
 ];
 
-const restaurants = [
+List<dynamic>  restaurants = [
   {
     "_id": "6530ebbcc9e72013e5b65933",
     "title": "Lapisara Eatery",
@@ -78,7 +78,7 @@ const restaurants = [
     "code": "41007428",
     "logoUrl":
         "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "rating": 5,
+    "rating": 3,
     "ratingCount": "6765",
     "coords": {
       "id": "2023",
