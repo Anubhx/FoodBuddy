@@ -65,15 +65,14 @@ class FoodWidget extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               ReusableText(
-                                text: 'Price: ',
-                                style: appStyle(10, kDark, FontWeight.w500)),
-
+                                  text: 'Price: ',
+                                  style: appStyle(10, kDark, FontWeight.w500)),
                               ReusableText(
-                                text: 'RS-  ',
-                                style: appStyle(10, kDark, FontWeight.w500)),    
+                                  text: 'RS-  ',
+                                  style: appStyle(10, kDark, FontWeight.w500)),
                               ReusableText(
-                                text: (price * 10).toString(),
-                                style: appStyle(10, kDark, FontWeight.w500)),
+                                  text: (price * 10).toString(),
+                                  style: appStyle(10, kDark, FontWeight.w500)),
                             ],
                           ),
                         ],
