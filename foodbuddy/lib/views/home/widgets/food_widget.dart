@@ -27,7 +27,7 @@ class FoodWidget extends StatelessWidget {
           padding: EdgeInsets.only(right: 12.w),
           child: Container(
             width: width * 0.75,
-            height: 192.h,
+            height: 180.h,
             decoration: BoxDecoration(
               color: kLightWhite,
               borderRadius: BorderRadius.circular(10.r),
@@ -66,13 +66,13 @@ class FoodWidget extends StatelessWidget {
                             children: [
                               ReusableText(
                                   text: 'Price: ',
-                                  style: appStyle(10, kDark, FontWeight.w500)),
+                                  style: appStyle(10, kPrimary, FontWeight.w500)),
                               ReusableText(
                                   text: 'RS-  ',
-                                  style: appStyle(10, kDark, FontWeight.w500)),
+                                  style: appStyle(10, kPrimary, FontWeight.w500)),
                               ReusableText(
                                   text: (price * 10).toString(),
-                                  style: appStyle(10, kDark, FontWeight.w500)),
+                                  style: appStyle(10, kPrimary, FontWeight.w500)),
                             ],
                           ),
                         ],

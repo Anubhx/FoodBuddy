@@ -67,77 +67,82 @@ List<dynamic> categories = [
   }
 ];
 
-List<dynamic>  restaurants = [
+List<dynamic> restaurants = [
   {
-    "_id": "6530ebbcc9e72013e5b65933",
-    "title": "Lapisara Eatery",
-    "time": "6:00am - 9:00pm",
+    "_id": "1",
+    "title": "Jyoti Vihar",
+    "time": "Opens tomorrow at 10am",
+    "isAvailable": null,
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "owner": "fdfsdfsdfs",
-    "code": "41007428",
+        "https://b.zmtcdn.com/data/pictures/9/20279/ec439bea812077779a19c18d998a2e59.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+    "owner": "Unknown",
+    "code": "Unknown",
     "logoUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "rating": 3,
-    "ratingCount": "6765",
+        "https://b.zmtcdn.com/data/pictures/9/20279/ec439bea812077779a19c18d998a2e59.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+    "rating": 4, // Assuming a rating since it's not provided
+    "ratingCount": "500", // Assuming a count since it's not provided
     "coords": {
-      "id": "2023",
-      "latitude": 37.78792117665919,
-      "longitude": -122.41325651079953,
-      "address": "698 Post St, San Francisco, CA 94109, United States",
-      "title": "Lapisara Eatery",
-      "latitudeDelta": 0.0122,
-      "longitudeDelta": 0.0221
+      "id": "2",
+      "latitude": 22.5481,
+      "longitude": 88.3524,
+      "address": "3A/1, Ho Chi Minh Sarani, Camac Street Area, Kolkata",
+      "title": "Jyoti Vihar",
+      "latitudeDelta": 0.005,
+      "longitudeDelta": 0.005
     }
   },
   {
-    "_id": "6530ea6bc9e72013e5b6592d",
-    "title": "Burger King",
-    "time": "6:00am - 9:00pm",
+    "_id": "2",
+    "title": "WOW! Momo",
+    "time": "9am – 3am",
+    "isAvailable": true,
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "owner": "sjgdsjgfjshhjs",
-    "code": "41007428",
+        "https://b.zmtcdn.com/data/pictures/chains/0/21060/d63b53ccea9074ba40fc829dc56b246a_featured_v2.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+    "owner": "Unknown",
+    "code": "Unknown",
     "logoUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "rating": 5,
-    "ratingCount": "3278",
+        "https://b.zmtcdn.com/data/pictures/chains/0/21060/c6f3182cad2a35db34ca6cab0c07e789.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+    "rating": 4,
+    "ratingCount": "1200",
     "coords": {
-      "id": "2020",
-      "latitude": 37.785925590588505,
-      "longitude": -122.41007428687641,
-      "address": "333 O'Farrell St, San Francisco, CA 94102, United States",
-      "title": "Burger King",
-      "latitudeDelta": 0.0122,
-      "longitudeDelta": 0.0221
+      "id": "3",
+      "latitude": 22.5529,
+      "longitude": 88.3530,
+      "address":
+          "57, Park Street, Beside Vodafone Store, Park Street Area, Kolkata",
+      "title": "WOW! Momo",
+      "latitudeDelta": 0.005,
+      "longitudeDelta": 0.005
     }
   },
   {
-    "_id": "6530eb66c9e72013e5b65931",
-    "title": "La Foods",
-    "time": "6:00am - 9:00pm",
+    "_id": "3",
+    "title": "Zam Zam",
+    "time": "Opens at 12noon",
+    "isAvailable": true,
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "owner": "fgdgdfgd",
-    "code": "41007428",
+        "https://b.zmtcdn.com/data/pictures/chains/6/22656/c50da022c4b3ce24bf8a427880546f6a.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+    "owner": "Unknown",
+    "code": "Unknown",
     "logoUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "rating": 5,
-    "ratingCount": "5666",
+        "https://b.zmtcdn.com/data/pictures/chains/6/22656/c50da022c4b3ce24bf8a427880546f6a.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+    "rating": 4,
+    "ratingCount": "800",
     "coords": {
-      "id": "2022",
-      "latitude": 37.787503258917035,
-      "longitude": -122.39854938269353,
-      "address": "333 O'Farrell St, San Francisco, CA 94102, United States",
-      "title": "La Foods",
-      "latitudeDelta": 0.0122,
-      "longitudeDelta": 0.0221
+      "id": "4",
+      "latitude": 22.5464,
+      "longitude": 88.3663,
+      "address": "28/A, Syed Amir Ali Avenue, Park Circus Area, Kolkata",
+      "title": "Zam Zam",
+      "latitudeDelta": 0.005,
+      "longitudeDelta": 0.005
     }
   },
   {
     "_id": "6530eb23c9e72013e5b6592f",
     "title": "Italian Restaurant",
     "time": "6:00am - 9:00pm",
+    // "isAvailable": null,
     "imageUrl":
         "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "owner": "sjgdsjgfjshhjs",
@@ -158,7 +163,7 @@ List<dynamic>  restaurants = [
   }
 ];
 
-List <Map<String, dynamic>> foods = [
+List<Map<String, dynamic>> foods = [
   {
     "_id": "65316968f94c6496dc84f3c1",
     "title": "Tiramisu",
@@ -179,9 +184,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Cocoa", "price": "0.50"},
       {"id": 5, "title": "Sugar", "price": "0.50"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "35 min"
@@ -206,9 +210,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Black Pepper", "price": "0.50"},
       {"id": 5, "title": "Pasta", "price": "3.00"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 2,
     "category": "6531209dbbe4998e90af3fef",
     "time": "20 min"
@@ -233,9 +236,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Cherry Tomatoes", "price": "1.00"},
       {"id": 5, "title": "Vinaigrette", "price": "0.50"}
     ],
-   "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "55 min"
@@ -258,9 +260,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 2, "title": "Pepperoni", "price": "2.50"},
       {"id": 3, "title": "Ketch up", "price": "0.50"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "30 min"
@@ -285,9 +286,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Coconut Milk", "price": "1.50"},
       {"id": 5, "title": "Ice", "price": "0.50"}
     ],
-   "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "25 min"
@@ -318,9 +318,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Pork", "price": "3.50"},
       {"id": 5, "title": "Barbecue Sauce", "price": "1.00"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "45 min"
@@ -389,5 +388,3 @@ const choicesList = [
     "value": "recommended",
   },
 ];
-
-

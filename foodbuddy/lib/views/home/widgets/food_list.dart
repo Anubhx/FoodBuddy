@@ -13,7 +13,7 @@ class FoodList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 184.h,
+      height: 180.h,
       padding: EdgeInsets.only(left: 12.w, top: 10.h),
       child: ListView(
         scrollDirection: Axis.horizontal,
@@ -24,6 +24,7 @@ class FoodList extends StatelessWidget {
               title: food['title'],
               time: food['time'],
                price:food['price'] ,
+               // price : food['price'].tostring(2),
               );
         }),
       ),

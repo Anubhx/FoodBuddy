@@ -36,7 +36,7 @@ class MainScreen extends StatelessWidget {
                       showSelectedLabels: false,
                       showUnselectedLabels: false,
                       unselectedIconTheme:
-                          const IconThemeData(color: Colors.black38),
+                          const IconThemeData(color: kOffWhite),
                       selectedIconTheme: const IconThemeData(color: kSecondary),
                       onTap: (value) {
                         controller.setTabIndex(value);
