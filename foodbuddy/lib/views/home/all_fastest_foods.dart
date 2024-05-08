@@ -6,6 +6,7 @@ import 'package:foodbuddy/common/reusable_text.dart';
 import 'package:foodbuddy/constants/constants.dart';
 import 'package:foodbuddy/constants/uidata.dart';
 import 'package:foodbuddy/views/home/widgets/food_tile.dart';
+import 'package:foodbuddy/views/home/widgets/food_tiles.dart';
 import 'package:foodbuddy/views/home/widgets/restaurants_tile.dart';
 
 class AllFastestFoods extends StatelessWidget {
@@ -16,9 +17,9 @@ class AllFastestFoods extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.3,
-        backgroundColor: kOffWhite,
+        backgroundColor: kPrimaryLight,
         title: ReusableText(text: "Fastest Foods ", 
-        style: appStyle(13, kGray, FontWeight.w600 )),
+        style: appStyle(13, kSecondary, FontWeight.w600 )),
       ),
      body: BackGroundContainer(
           color: Colors.white,
@@ -27,7 +28,7 @@ class AllFastestFoods extends StatelessWidget {
             
             children: List.generate(foods.length, (i) {
               var food = foods[i];
-              return FoodTile(food: food,);
+              return FoodTiles(food: food,);
             }),
           ),
         )
