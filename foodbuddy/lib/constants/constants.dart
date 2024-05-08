@@ -34,7 +34,6 @@ String googleApiKey = '';
 
 // const kRed = Color(0xFFD32F2F); // Deep Red for errors, warnings, or special promotions
 
-// const kOffWhite = Color(0xFFEEEEEE); // Off White for UI elements that need subtle differentiation
 
 const kPrimary = Color(0xFFFC6011); // Vibrant Orange for active elements and CTAs
 const kPrimaryLight = Color(0xFFFFD7C2); // Lighter shade of orange for gradient effects or softer elements
@@ -55,6 +54,9 @@ const kDark = Color(0xFF212121); // Nearly Black, offers excellent readability f
 const kRed = Color(0xFFD32F2F); // Deep Red for warnings or urgent prompts
 
 const kOffWhite = Color(0xFFEEEEEE); // Off White, ideal for UI backgrounds that require subtle differentiation
+
+// const kOffWhite = Color(0xFFEEEEEE); // Off White for UI elements that need subtle differentiation
+
 
 
 double height = 825.h;
