@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodbuddy/common/app_style.dart';
@@ -14,24 +16,24 @@ class Recommendation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.3,
-        
-        backgroundColor: kPrimaryLight,
-        title: ReusableText(text: "Recommendation", 
-        style: appStyle(13, kSecondary, FontWeight.w600 )),
-      ),
-      body: BackGroundContainer(
+        appBar: AppBar(
+          elevation: 0.3,
+          backgroundColor: kPrimaryLight,
+          title: ReusableText(
+              text: "Recommendation",
+              style: appStyle(13, kSecondary, FontWeight.w600)),
+        ),
+        body: BackGroundContainer(
           color: Colors.white,
           child: ListView(
-            padding: EdgeInsets.fromLTRB(12.w, 12.h,12.w, 12.h),
-            
+            padding: EdgeInsets.fromLTRB(12.w, 12.h, 12.w, 12.h),
             children: List.generate(foods.length, (i) {
               var food = foods[i];
-              return FoodTiles(food: food,);
+              return FoodTiles(
+                food: food,
+              );
             }),
           ),
-        )
-    );
+        ));
   }
 }
