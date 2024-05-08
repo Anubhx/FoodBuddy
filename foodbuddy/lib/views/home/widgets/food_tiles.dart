@@ -83,7 +83,7 @@ class FoodTiles extends StatelessWidget {
                           width: width * 0.7,
                           height: 15.h,
                           child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
+                              scrollDirection: Axis.horizontal,
                               itemCount: food['additives'].length,
                               itemBuilder: (context, i) {
                                 var additive = food['additives'][i];
@@ -91,18 +91,18 @@ class FoodTiles extends StatelessWidget {
                                   margin: EdgeInsets.only(right: 6.w),
                                   decoration: BoxDecoration(
                                     color: kPrimaryLight,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(9.r),
-                                   ),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(9.r),
+                                    ),
                                   ),
                                   child: Center(
                                     child: Padding(
-                                      padding: EdgeInsets.all(2.h) ,
-                                      child: ReusableText(
-                                        text: additive['title'],
-                                        style: appStyle(8, kGray, FontWeight.w500),
-                                      )
-                                    ),
+                                        padding: EdgeInsets.all(2.h),
+                                        child: ReusableText(
+                                          text: additive['title'],
+                                          style: appStyle(
+                                              8, kGray, FontWeight.w500),
+                                        )),
                                   ),
                                 );
                               }),
