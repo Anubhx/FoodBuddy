@@ -51,7 +51,7 @@ To set up the project locally, follow these steps:
 
 4. Run the application:    
 ```bash
-flutter run
+   flutter run
 ```
 
 ## Contributing
