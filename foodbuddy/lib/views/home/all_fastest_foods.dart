@@ -29,6 +29,7 @@ class AllFastestFoods extends StatelessWidget {
             children: List.generate(foods.length, (i) {
               var food = foods[i];
               return FoodTiles(food: food,);
+              
             }),
           ),
         )
